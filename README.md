@@ -90,11 +90,71 @@ Develop an Artificial Intelligence (AI) / Machine Learning (ML) based system for
 
 The objective is to develop an intelligent system that can process satellite observations from multiple sources and use AI/ML techniques to:
 
-Identify tropical cyclone formations
-Recognize cyclone-related patterns
-Classify detected cyclone systems
-Track cyclone movement
-Predict future cyclone trajectory
-Analyze intensity-related characteristics
-Present the results through an accessible visualization platform
+- Identify tropical cyclone formations
+- Recognize cyclone-related patterns
+- Classify detected cyclone systems
+- Track cyclone movement
+- Predict future cyclone trajectory
+- Analyze intensity-related characteristics
+- Present the results through an accessible visualization platform
 
+
+# Problem Overview
+
+**Why is this problem challenging?**
+1. Large Volumes of Satellite Data
+
+Satellite platforms continuously generate huge quantities of Earth-observation data.
+
+Manual inspection of this data can be:
+
+- Time-consuming
+- Difficult to scale
+- Dependent on expert interpretation
+- Computationally expensive
+
+2. Multi-Source Data
+
+Different satellites provide different types of observations.
+
+These may include:
+
+- Visible imagery
+- Infrared imagery
+- Water-vapor imagery
+- Microwave observations
+- Ocean observations
+- Atmospheric observations
+
+Combining these heterogeneous observations into a unified pipeline presents a significant data-engineering challenge.
+
+3. Cyclone Identification
+
+A tropical disturbance must be distinguished from other atmospheric systems.
+
+The system should learn visual and spatial patterns associated with cyclone formation and identify potential cyclone systems automatically.
+
+4. Cyclone Classification
+
+Cyclones can exhibit different structural characteristics and intensity levels.
+
+An AI/ML model can assist in classifying detected cyclone systems according to learned patterns and available ground-truth categories.
+
+5. Cyclone Tracking
+
+Cyclones evolve continuously over time.
+
+Successive satellite observations can be used to estimate the movement of a cyclone and generate its historical track.
+
+6. Cyclone Prediction
+
+Prediction requires understanding both the current state and historical evolution of the cyclone.
+
+Potential prediction targets include:
+
+- Future latitude
+- Future longitude
+- Direction of movement
+- Intensity
+- Wind speed
+- Central pressure
