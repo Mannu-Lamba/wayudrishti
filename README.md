@@ -23,7 +23,6 @@ The system aims to transform large volumes of satellite observations into meanin
 - [Technology Stack](#-technology-stack)
 - [Machine Learning](#-machine-learning)
 - [Database](#-database)
-- [Deployment](#-deployment)
 - [Installation & Setup](#-installation--setup)
 - [Model Evaluation](#-model-evaluation)
 - [Expected Output](#-expected-output)
@@ -355,3 +354,132 @@ The dashboard can display:
 - Satellite imagery
 - Confidence scores
 - Historical information
+
+# Data Sources
+
+VayuDrishti is designed around multi-source satellite observations.
+
+The exact datasets will be finalized after evaluating their availability, resolution, temporal coverage, licensing, and suitability for model training.
+
+**INSAT**
+
+Indian geostationary satellite observations can provide valuable information for monitoring weather systems over the Indian region.
+
+Potential observations include:
+
+- Visible imagery
+- Infrared imagery
+- Water-vapor imagery
+- Atmospheric information
+
+**NOAA**
+
+NOAA provides access to various meteorological and satellite datasets.
+
+Potentially useful observations include:
+
+- Geostationary satellite observations
+- Polar-orbiting satellite observations
+- Ocean observations
+- Meteorological datasets
+
+**Other Satellite Sources**
+
+Depending on availability and licensing, additional Earth-observation sources may be considered, including:
+
+- NASA datasets
+- EUMETSAT datasets
+- Copernicus / Sentinel datasets
+- Other publicly available Earth-observation datasets
+
+**Auxiliary Data**
+
+Satellite imagery may be complemented with:
+
+- ERA5 / reanalysis data
+- Historical cyclone tracks
+- Best-track datasets
+- Wind information
+- Atmospheric pressure
+- Sea-surface temperature
+
+# Technology Stack
+
+**Frontend**
+
+Potential technologies:
+
+- React.js / Next.js
+- JavaScript / TypeScript
+- Tailwind CSS
+- Leaflet / Mapbox
+- Recharts / Plotly
+
+**Backend**
+
+Potential technologies:
+
+- Python
+- FastAPI
+- REST APIs
+- WebSockets
+
+**Machine Learning**
+
+Potential technologies:
+
+- Python
+- PyTorch
+- TensorFlow / Keras
+- NumPy
+- Pandas
+- OpenCV
+- Scikit-learn
+- Xarray
+- Rasterio
+- GDAL
+
+**Database**
+
+Potential technologies:
+
+- PostgreSQL
+- Redis
+
+**Data Storage**
+
+Potential options:
+
+- Local storage during development
+- AWS S3
+- Google Cloud Storage
+
+**DevOps**
+
+Potential tools:
+
+- Git
+- GitHub
+- Docker
+- GitHub Actions
+- Cloud deployment
+
+# Development
+The database will maintain structured application, cyclone, observation, and prediction information.
+
+Potential cyclone attributes include:
+
+- Cyclone ID
+- Name
+- Timestamp
+- Latitude
+- Longitude
+- Intensity
+- Wind speed
+- Pressure
+- Classification
+- Model confidence
+
+# Model Inference Workflow
+
+![alt text](image-3.png)
