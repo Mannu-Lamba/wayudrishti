@@ -158,3 +158,97 @@ Potential prediction targets include:
 - Intensity
 - Wind speed
 - Central pressure
+
+# Our Solution
+VayuDrishti proposes an end-to-end AI/ML pipeline for tropical cyclone analysis.
+![alt text](<Screenshot 2026-09-03 215600.png>)
+
+# Key Objectives
+1. Multi-Source Data Integration
+
+Integrate satellite observations from multiple publicly available sources into a unified data pipeline.
+
+2. Automated Data Preprocessing
+
+Clean, normalize, align, and transform raw satellite observations into machine-learning-ready datasets.
+
+3. Cyclone Identification
+
+Automatically identify cyclone formations and cyclone-like patterns from satellite imagery.
+
+4. Cyclone Classification
+
+Classify detected cyclones according to relevant structural and intensity characteristics.
+
+5. Cyclone Tracking
+
+Track cyclone movement across successive satellite observations.
+
+6. Cyclone Prediction
+
+Predict future cyclone trajectory and potentially intensity-related parameters using temporal AI/ML models.
+
+7. Visualization
+
+Provide cyclone information through an interactive web dashboard.
+
+8. Decision Support
+
+Provide useful cyclone information that can assist disaster-management and monitoring activities.
+
+# Key Features
+**Multi-Source Satellite Data**
+
+Support multiple satellite and auxiliary data sources through a unified processing pipeline.
+
+**AI-Based Cyclone Detection**
+
+Automatically identify potential cyclone systems from satellite observations.
+
+**Cyclone Classification**
+
+Classify detected systems according to learned cyclone patterns and available intensity categories.
+
+**Cyclone Tracking**
+
+Track cyclone movement using sequential satellite observations.
+
+**Future Position Prediction**
+
+Estimate the future trajectory of a cyclone using historical and current observations.
+
+**Intensity Analysis**
+
+Analyze cyclone intensity-related characteristics and provide predictions where supported by the trained model.
+
+**Interactive Map**
+
+The dashboard can display:
+
+- Current cyclone position
+- Historical trajectory
+- Predicted trajectory
+- Intensity information
+- Geographic coordinates
+- bservation timestamps
+
+**Analytics Dashboard**
+
+The dashboard can provide:
+
+- Cyclone statistics
+- Historical cyclone information
+- Model predictions
+- Confidence scores
+- Time-series information
+- Satellite imagery
+**Alert System**
+
+The platform can be extended to generate alerts when potentially significant cyclone conditions are detected or predicted.
+
+Potential notification channels:
+
+- Web notifications
+- Email
+- SMS
+- Push notificatio
