@@ -82,7 +82,7 @@ Tracking & Prediction
 Backend Services
       ↓
 Interactive Dashboard
-```text 
+``` 
 # Problem Statement
 SIH26070
 
