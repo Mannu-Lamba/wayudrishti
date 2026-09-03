@@ -161,8 +161,7 @@ Potential prediction targets include:
 
 # Our Solution
 VayuDrishti proposes an end-to-end AI/ML pipeline for tropical cyclone analysis.
-![alt text](<Screenshot 2026-09-03 215600.png>)
-
+![alt text](image.png)
 # Key Objectives
 1. Multi-Source Data Integration
 
@@ -253,7 +252,5 @@ Potential notification channels:
 - SMS
 - Push notificatio
 
-# Our Solution
-VayuDrishti proposes an end-to-end AI/ML pipeline for tropical cyclone analysis.
-
-(<![alt text](image.png)>)
+# System Architecture
+![alt text](image-1.png)
