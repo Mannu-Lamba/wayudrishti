@@ -23,9 +23,7 @@ The system aims to transform large volumes of satellite observations into meanin
 - [Technology Stack](#-technology-stack)
 - [Machine Learning](#-machine-learning)
 - [Database](#-database)
-- [Installation & Setup](#-installation--setup)
-- [Model Evaluation](#-model-evaluation)
-- [Expected Output](#-expected-output)
+- [Model Inference Workflow](#model-inference-workflow)
 - [Future Scope](#-future-scope)
 - [Team](#-team)
 - [Contribution](#-contribution)
@@ -482,4 +480,57 @@ Potential cyclone attributes include:
 
 # Model Inference Workflow
 
-![alt text](image-3.png)
+![Satellite observation to dashboard workflow for cyclone detection and prediction](image-3.png)
+
+# Future Scope
+
+**More Data Source**
+Integrate additional satellite and meteorological datasets to improve the diversity of observations.
+
+**Advanced AI Models**
+
+Future versions may explore:
+
+- Vision Transformers
+- Spatio-temporal Transformers
+- Multimodal models
+- Ensemble learning
+- Self-supervised learning
+
+**Ocean Parameters**
+
+Additional environmental variables could be incorporated, such as:
+
+- Sea Surface Temperature
+- Ocean heat content
+- Wind fields
+- Atmospheric pressure
+- Humidity
+
+**Near Real-Time Monitoring**
+
+Develop automated ingestion pipelines for continuously updated satellite observations.
+
+
+**Early Warning**
+
+Extend the platform with automated alert generation based on detected and predicted cyclone conditions.
+
+
+**Mobile Application**
+
+Develop a mobile application for field personnel, emergency responders, and other users.
+
+
+**Decision Support**
+
+Provide summarized cyclone intelligence that can assist disaster-management and monitoring organizations
+
+# Team
+Member	Role
+<Yashaswini>	Project Lead | AI/ML
+<Raj>	Full Stack Web Developer and ML Model Trainer
+<Mankirat>	Backend Development & ML Model Trainer
+<Arnav>	Databases and Data Management
+<Maulik>	Research & Data Collection
+<Vedant>	Documentation and UI/UX
