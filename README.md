@@ -20,24 +20,13 @@ The system aims to transform large volumes of satellite observations into meanin
 - [System Architecture](#-system-architecture)
 - [Overall Workflow](#-overall-workflow)
 - [Data Sources](#-data-sources)
-- [AI/ML Pipeline](#-aiml-pipeline)
-- [Cyclone Detection](#1-cyclone-detection)
-- [Cyclone Classification](#2-cyclone-classification)
-- [Cyclone Tracking](#3-cyclone-tracking)
-- [Cyclone Prediction](#4-cyclone-prediction)
 - [Technology Stack](#-technology-stack)
-- [Project Structure](#-project-structure)
-- [Frontend](#-frontend)
-- [Backend](#-backend)
 - [Machine Learning](#-machine-learning)
 - [Database](#-database)
 - [Deployment](#-deployment)
 - [Installation & Setup](#-installation--setup)
-- [Environment Variables](#-environment-variables)
-- [API Overview](#-api-overview)
 - [Model Evaluation](#-model-evaluation)
 - [Expected Output](#-expected-output)
-- [Development Roadmap](#-development-roadmap)
 - [Future Scope](#-future-scope)
 - [Team](#-team)
 - [Contribution](#-contribution)
@@ -254,3 +243,133 @@ Potential notification channels:
 
 # System Architecture
 ![alt text](image-2.png)
+
+# Overaall WorkFlow
+
+**Data Collection**
+
+Satellite observations are collected from available data providers.
+
+Satellite Sources
+       ↓
+APIs / Downloads
+       ↓
+Raw Satellite Observations
+Step 2 — Data Storage
+
+Collected data is stored in a structured storage system.
+
+Raw Data
+   ↓
+Data Lake / Object Storage
+   ↓
+Metadata Catalogue
+Step 3 — Data Preprocessing
+
+Raw satellite data is transformed into analysis-ready data.
+
+Potential preprocessing operations include:
+
+Data validation
+Missing-data handling
+Noise reduction
+Cloud masking where applicable
+Georeferencing
+Spatial resampling
+Normalization
+Temporal alignment
+Image cropping
+Data augmentation
+Step 4 — Feature Extraction
+
+Relevant spatial and temporal features are extracted from satellite observations.
+
+Possible approaches include:
+
+CNN-based feature extraction
+Vision Transformers
+Spatio-temporal encoders
+Multi-channel image representations
+Step 5 — Cyclone Detection
+
+The model determines whether a cyclone or cyclone-like system is present.
+
+Satellite Image
+      ↓
+Feature Extraction
+      ↓
+Detection Model
+      ↓
+Cyclone / No Cyclone
+
+The detection stage may additionally provide:
+
+Location
+Bounding region
+Confidence score
+Step 6 — Cyclone Classification
+
+Once a cyclone is detected, the system analyzes its characteristics.
+
+Detected Cyclone
+       ↓
+Classification Model
+       ↓
+Cyclone Category / Pattern
+       ↓
+Confidence Score
+Step 7 — Cyclone Tracking
+
+Successive observations are used to estimate cyclone movement.
+
+t₁ → t₂ → t₃ → t₄
+ ↓    ↓    ↓    ↓
+ P₁   P₂   P₃   P₄
+
+The detected positions can be connected to generate a historical cyclone trajectory.
+
+Step 8 — Cyclone Prediction
+
+Historical and current observations can be provided to a temporal forecasting model.
+
+Historical Observations
+        ↓
+Temporal Feature Extraction
+        ↓
+Prediction Model
+        ↓
+Future Cyclone State
+
+Potential outputs include:
+
+Future latitude
+Future longitude
+Direction
+Intensity
+Wind speed
+Central pressure
+Step 9 — Backend Processing
+
+The backend acts as the communication layer between the frontend, database, and AI/ML services.
+
+ML Models
+    ↓
+Inference Service
+    ↓
+Backend API
+    ↓
+Frontend
+Step 10 — Visualization
+
+The frontend presents the model results through an interactive dashboard.
+
+The dashboard can display:
+
+Cyclone location
+Historical track
+Predicted path
+Classification
+Intensity
+Satellite imagery
+Confidence scores
+Historical information
