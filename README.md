@@ -251,11 +251,13 @@ Potential notification channels:
 Satellite observations are collected from available data providers.
 
 Satellite Sources | APIs / Downloads | Raw Satellite Observations
+
 **Data Storage**
 
 Collected data is stored in a structured storage system.
 
 Raw Data | Data Lake / Object Storage | Metadata Catalogue
+
 **Data Preprocessing**
 
 Raw satellite data is transformed into analysis-ready data.
@@ -272,6 +274,7 @@ Potential preprocessing operations include:
 - Temporal alignment
 - Image cropping
 - Data augmentation
+
 **Feature Extraction**
 
 Relevant spatial and temporal features are extracted from satellite observations.
@@ -282,6 +285,7 @@ Possible approaches include:
 - ision Transformers
 - Spatio-temporal encoders
 - Multi-channel image representations
+
 **Cyclone Detection**
 
 The model determines whether a cyclone or cyclone-like system is present.
@@ -299,11 +303,13 @@ The detection stage may additionally provide:
 - Location
 - Bounding region
 - Confidence score
+
 **Cyclone Classification**
 
 Once a cyclone is detected, the system analyzes its characteristics.
 
 Detected Cyclone -> Classification Model -> Cyclone Category / PatConfidence Score
+
 **Cyclone Tracking**
 
 Successive observations are used to estimate cyclone movement.
@@ -328,11 +334,13 @@ Potential outputs include:
 - Intensity
 - Wind speed
 - Central pressure
+
 **Backend Processing**
 
 The backend acts as the communication layer between the frontend, database, and AI/ML services.
 
 ML Models -> Inference Service -> Backend API -> Frontend
+
 **Visualization**
 
 The frontend presents the model results through an interactive dashboard.
