@@ -527,7 +527,7 @@ Develop a mobile application for field personnel, emergency responders, and othe
 Provide summarized cyclone intelligence that can assist disaster-management and monitoring organizations
 
 # Team
-Member	        Role
+*Member*	        *Role*
 
 Yashaswini -> Project Lead | AI/ML
 
@@ -540,3 +540,17 @@ Arnav -> Databases and Data Management
 Maulik ->	Research & Data Collection
 
 Vedant ->	Documentation and UI/UX
+
+# 🤝Contribution
+
+Contributions are very welcome, but keep maintain the development workflow.
+
+# 📜License
+
+This project is being developed as part of Smart India Hackathon 2026.
+
+License information will be finalized according to the team's project and open-source policy.
+
+
+
+****⭐ If you find this project interesting, consider giving the repository a star!****
