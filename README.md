@@ -528,9 +528,15 @@ Provide summarized cyclone intelligence that can assist disaster-management and 
 
 # Team
 Member	        Role
+
 Yashaswini -> Project Lead | AI/ML
+
 Raj -> Full Stack Web Developer and ML Model Trainer
+
 Mankirat ->	Backend Development & ML Model Trainer
+
 Arnav -> Databases and Data Management
+
 Maulik ->	Research & Data Collection
+
 Vedant ->	Documentation and UI/UX
