@@ -250,47 +250,39 @@ Potential notification channels:
 
 Satellite observations are collected from available data providers.
 
-Satellite Sources
-       ↓
-APIs / Downloads
-       ↓
-Raw Satellite Observations
-Step 2 — Data Storage
+Satellite Sources | APIs / Downloads | Raw Satellite Observations
+**Data Storage**
 
 Collected data is stored in a structured storage system.
 
-Raw Data
-   ↓
-Data Lake / Object Storage
-   ↓
-Metadata Catalogue
-Step 3 — Data Preprocessing
+Raw Data | Data Lake / Object Storage | Metadata Catalogue
+**Data Preprocessing**
 
 Raw satellite data is transformed into analysis-ready data.
 
 Potential preprocessing operations include:
 
-Data validation
-Missing-data handling
-Noise reduction
-Cloud masking where applicable
-Georeferencing
-Spatial resampling
-Normalization
-Temporal alignment
-Image cropping
-Data augmentation
-Step 4 — Feature Extraction
+- Data validation
+- Missing-data handling
+- Noise reduction
+- Cloud masking where applicable
+- Georeferencing
+- Spatial resampling
+- Normalization
+- Temporal alignment
+- Image cropping
+- Data augmentation
+**Feature Extraction**
 
 Relevant spatial and temporal features are extracted from satellite observations.
 
 Possible approaches include:
 
-CNN-based feature extraction
-Vision Transformers
-Spatio-temporal encoders
-Multi-channel image representations
-Step 5 — Cyclone Detection
+- CNN-based feature extraction
+- ision Transformers
+- Spatio-temporal encoders
+- Multi-channel image representations
+**Cyclone Detection**
 
 The model determines whether a cyclone or cyclone-like system is present.
 
@@ -304,21 +296,15 @@ Cyclone / No Cyclone
 
 The detection stage may additionally provide:
 
-Location
-Bounding region
-Confidence score
-Step 6 — Cyclone Classification
+- Location
+- Bounding region
+- Confidence score
+**Cyclone Classification**
 
 Once a cyclone is detected, the system analyzes its characteristics.
 
-Detected Cyclone
-       ↓
-Classification Model
-       ↓
-Cyclone Category / Pattern
-       ↓
-Confidence Score
-Step 7 — Cyclone Tracking
+Detected Cyclone -> Classification Model -> Cyclone Category / PatConfidence Score
+**Cyclone Tracking**
 
 Successive observations are used to estimate cyclone movement.
 
@@ -328,48 +314,36 @@ t₁ → t₂ → t₃ → t₄
 
 The detected positions can be connected to generate a historical cyclone trajectory.
 
-Step 8 — Cyclone Prediction
+**Cyclone Prediction**
 
 Historical and current observations can be provided to a temporal forecasting model.
 
-Historical Observations
-        ↓
-Temporal Feature Extraction
-        ↓
-Prediction Model
-        ↓
-Future Cyclone State
+Historical Observations -> Temporal Feature Extraction -> Prediction Model -> Future Cyclone State
 
 Potential outputs include:
 
-Future latitude
-Future longitude
-Direction
-Intensity
-Wind speed
-Central pressure
-Step 9 — Backend Processing
+- Future latitude
+- Future longitude
+- Direction
+- Intensity
+- Wind speed
+- Central pressure
+**Backend Processing**
 
 The backend acts as the communication layer between the frontend, database, and AI/ML services.
 
-ML Models
-    ↓
-Inference Service
-    ↓
-Backend API
-    ↓
-Frontend
-Step 10 — Visualization
+ML Models -> Inference Service -> Backend API -> Frontend
+**Visualization**
 
 The frontend presents the model results through an interactive dashboard.
 
 The dashboard can display:
 
-Cyclone location
-Historical track
-Predicted path
-Classification
-Intensity
-Satellite imagery
-Confidence scores
-Historical information
+- Cyclone location
+- Historical track
+- Predicted path
+- Classification
+- Intensity
+- Satellite imagery
+- Confidence scores
+- Historical information
