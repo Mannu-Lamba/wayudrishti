@@ -527,10 +527,10 @@ Develop a mobile application for field personnel, emergency responders, and othe
 Provide summarized cyclone intelligence that can assist disaster-management and monitoring organizations
 
 # Team
-Member	Role
-<Yashaswini>	Project Lead | AI/ML
-<Raj>	Full Stack Web Developer and ML Model Trainer
-<Mankirat>	Backend Development & ML Model Trainer
-<Arnav>	Databases and Data Management
-<Maulik>	Research & Data Collection
-<Vedant>	Documentation and UI/UX
+Member	        Role
+Yashaswini -> Project Lead | AI/ML
+Raj -> Full Stack Web Developer and ML Model Trainer
+Mankirat ->	Backend Development & ML Model Trainer
+Arnav -> Databases and Data Management
+Maulik ->	Research & Data Collection
+Vedant ->	Documentation and UI/UX
