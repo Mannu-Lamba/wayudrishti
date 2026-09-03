@@ -82,13 +82,11 @@ Tracking & Prediction
 Backend Services
       ↓
 Interactive Dashboard
-```text 
+```
 # Problem Statement
-SIH26070
-
 Develop an Artificial Intelligence (AI) / Machine Learning (ML) based system for identification, classification, and prediction of different tropical cyclone patterns using multi-source satellite data.
 
-Core Challenge
+**Core Challenge**
 
 The objective is to develop an intelligent system that can process satellite observations from multiple sources and use AI/ML techniques to:
 
