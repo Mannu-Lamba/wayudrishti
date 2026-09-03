@@ -252,3 +252,8 @@ Potential notification channels:
 - Email
 - SMS
 - Push notificatio
+
+# Our Solution
+VayuDrishti proposes an end-to-end AI/ML pipeline for tropical cyclone analysis.
+
+(<![alt text](image.png)>)
